@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <style>
+        .container{
+            border: solid #ccc 1px;
+            width: 400px;
+            background-color: navy;
+            color: yellow;
+        }
+        .Content div{
+            margin-top: 5px;
+        }
+        label{
+            display:inline-block;
+            width: 150px;
+            text-align: right;
+            margin-right: 10px;
+        }
+        input[type="text"]{
+            width: 180px;
+        }
+        .header{
+            font-size: 20px;
+            background-color: orange;
+        }
+        .w-180 {
+            width:180px
+        }
+        .footer{
+            background-color: orange;
+            text-align: right;
+            margin-top: 5px;
+            height: 30px;
+            line-height: 30px;
+            padding-right: 5px;
+        }
+        .submit{
+            background-color: green;
+            color:white;
+        }
+        .cancel{
+            background-color: red;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            Sign Up
+        </div>
+        <div class="Content">
+            <div>
+                <label for="">First Name</label>
+                <input type="text" name="fistname" placeholder="Enter First Name">
+            </div>
+            <div>
+                <label for="">Last Name</label>
+                <input type="text" name="lastname" placeholder="Enter Last Name">
+            </div>
+            <div>
+                <label for="">Date of Birth</label>
+                <input type="date" name="Dateofbirth" id="">
+            </div>
+            <div>
+                <label for="">Gender</label>
+                <input type="radio" name="Gender"> Male
+                <input type="radio" name="Gender"> Famale
+            </div>
+            <div>
+                <label for="">Country</label>
+                <select name="Country" id="">
+                    <option value="">Country</option>
+                    <option value="">Japan</option>
+                    <option value="">Vietnam</option>
+                    <option value="">England</option>
+                </select>
+            </div>
+            <div>
+                <label for="">E-mail</label>
+                <input name="Email" type="text">
+            </div>
+            <div>
+                <label for="">Phone</label>
+                <input class="w-180" name="phonenumber" type="number">
+            </div>
+            <div>
+                <label for="">Password</label>
+                <input class="w-180" type="password">
+            </div>
+            <div>
+                <label for="">Confirm Password</label>
+                <input class="w-180" type="password">
+            </div>
+            <div>
+                <label for=""></label>
+                <input class="Agree" type="checkbox"> I Agree to the Terms of use
+            </div>
+        </div>
+        <div class="footer">
+            <button class="submit">Submit</button>
+            <button class="cancel">Cancel</button>
+        </div>
+    </div>
+</body>
+</html>
